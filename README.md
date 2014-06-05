@@ -3,7 +3,7 @@ Set password on WordPress Multisite Registration
 
 This WordPress Plugin lets users choose their password when signing up on your WordPress multisite blog
 
-This is an improved version of the [WPMUDev Set Password plugin](http://premium.wpmudev.org/forums/tags/set-password), forked from version 1.1.2 in accordance with the GPL license.
+This is an improved version of the [WPMUDev Set Password plugin](https://premium.wpmudev.org/project/set-password-on-wordpress-mu-blog-creation/), forked from version 1.1.2 in accordance with the GPL license.
 
 ### Requirements
 
