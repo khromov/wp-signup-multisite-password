@@ -80,7 +80,7 @@ if(is_multisite())
 	{
 		if(isset($_POST['password_1']))
 		{
-			$add_meta = array('password' => base64_encode($_POST['password_1'])); //Store as base64 to avoid injections
+			$add_meta = array('password' => (isset($_POST['password_1_base64']) ? $_POST['password_1'] : base64_encode($_POST['password_1']))); //Store as base64 to avoid injections
 			$meta = array_merge($add_meta, $meta);
 		}
 		//This should never happen.
@@ -94,7 +94,10 @@ if(is_multisite())
 		if(isset($_POST['password_1']))
 		{
 			?>
-			<input type="hidden" name="password_1" value="<?php echo $_POST['password_1']; ?>" />
+			<!-- pass that we have base64 encoded the value -->
+			<input type="hidden" name="password_1_base64" value="1" />
+			<!-- don't base64 encode multiple times if user fails validation (in which case the flag will already be set) -->
+			<input type="hidden" name="password_1" value="<?=(isset($_POST['password_1_base64']) ? $_POST['password_1'] : base64_encode($_POST['password_1']))?>" />
 			<?php
 		}
 	});
