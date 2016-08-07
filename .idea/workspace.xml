@@ -4,6 +4,7 @@
     <list default="true" id="9ea5533d-4566-4c25-9f54-3c9bb991459a" name="Default" comment="" />
     <ignored path="wp-signup-multisite-password.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,12 +22,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="multisite_signup_pw-sv_SE.po" pinned="false" current-in-tab="true">
+      <file leaf-file-name="multisite_signup_pw-sv_SE.po" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/languages/multisite_signup_pw-sv_SE.po">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zh_CN.po" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/languages/zh_CN.po">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup-multisite-password.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/signup-multisite-password.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+              <folding>
+                <marker date="1470552085000" expanded="true" signature="3633:3689" ph="SELECT * FRO... ${$wpdb-&gt;signups}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,12 +149,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470552116294</updated>
-      <workItem from="1470552117516" duration="8000" />
+      <workItem from="1470552117516" duration="759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8000" />
+    <option name="totallyTimeSpent" value="759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="23" width="1400" height="757" extended-state="0" />
@@ -169,6 +192,24 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/zh_CN.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup-multisite-password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <marker date="1470552085000" expanded="true" signature="3633:3689" ph="SELECT * FRO... ${$wpdb-&gt;signups}" />
+          </folding>
         </state>
       </provider>
     </entry>
