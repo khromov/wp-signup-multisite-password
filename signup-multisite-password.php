@@ -30,21 +30,25 @@ if(is_multisite())
 		?>
 
 		<!-- Label for password_1 -->
-		<label for="password_1"><?=__('Password', 'multisite_signup_pw')?>:</label>
+		<label for="password_1"><?php echo __('Password', 'multisite_signup_pw')?>:</label>
 
 		<!-- Errors -->
-		<?=($error) ? "<p class=\"error\">{$error}</p>" : ''?>
+		<?php echo($error) ? "<p class=\"error\">{$error}</p>" : ''?>
 
 		<!-- password_1 input -->
-		<input name="password_1" type="password" id="password_1" value="" autocomplete="off" maxlength="20"/><br/>
-		<?=__('Type in your password.', 'multisite_signup_pw')?>
+		<input name="password_1" type="password" id="password_1"
+               value="<?php echo empty( $_REQUEST['password_1'] ) ? '' : esc_attr( trim( $_REQUEST['password_1'] ) ); ?>"
+               autocomplete="off" maxlength="20"/> <br/>
+		<?php echo __('Type in your password.', 'multisite_signup_pw')?>
 
 		<!-- Label for password_2 -->
-		<label for="password_2"><?=__('Confirm Password', 'multisite_signup_pw'); ?>:</label>
+		<label for="password_2"><?php echo __('Confirm Password', 'multisite_signup_pw'); ?>:</label>
 
 		<!-- password_2 input -->
-		<input name="password_2" type="password" id="password_2" value="" autocomplete="off" maxlength="20"/><br/>
-		<?=__('Type in your password again.', 'multisite_signup_pw')?>
+		<input name="password_2" type="password" id="password_2"
+               value="<?php echo empty( $_REQUEST['password_2'] ) ? '' : esc_attr( trim( $_REQUEST['password_2'] ) ); ?>"
+               autocomplete="off" maxlength="20"/><br/>
+		<?php echo __('Type in your password again.', 'multisite_signup_pw')?>
 		<?php
 	}, 9); //Show early
 
@@ -97,7 +101,7 @@ if(is_multisite())
 			<!-- pass that we have base64 encoded the value -->
 			<input type="hidden" name="password_1_base64" value="1" />
 			<!-- don't base64 encode multiple times if user fails validation (in which case the flag will already be set) -->
-			<input type="hidden" name="password_1" value="<?=(isset($_POST['password_1_base64']) ? $_POST['password_1'] : base64_encode($_POST['password_1']))?>" />
+			<input type="hidden" name="password_1" value="<?php echo(isset($_POST['password_1_base64']) ? $_POST['password_1'] : base64_encode($_POST['password_1']))?>" />
 			<?php
 		}
 	});
